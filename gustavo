@@ -2,6 +2,7 @@
 import sqlite3 as db
 import tweepy as twitter
 import config
+import sys
 
 def frase():
 	a_aux = get_a()
@@ -109,7 +110,7 @@ def get_c_met(a):
 	return c_met
 
 def get_con():
-	 con = db.connect('gustavo.db')
+	 con = db.connect('%s/gustavo.db' % sys.path[0])
 	 con.text_factory = str
 	 return con
  
