@@ -58,3 +58,6 @@ target/
 
 # Database
 gustavo.db
+
+# Config gile
+config.py

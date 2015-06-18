@@ -1,0 +1,4 @@
+consumer_key = <your app consumer key>
+consumer_secret = <your app consumer secret>
+access_token = <your username access token>
+access_token_secret = <your username access token secret>

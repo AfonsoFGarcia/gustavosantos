@@ -1,5 +1,7 @@
 #!/usr/bin/python2
 import sqlite3 as db
+import tweepy as twitter
+import config
 
 def frase():
 	a_aux = get_a()
@@ -112,4 +114,9 @@ def get_con():
 	 return con
  
 coise = frase()
-print(coise)
+
+auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
+auth.set_access_token(config.access_token, config.access_token_secret)
+
+api = twitter.API(auth)
+api.update_status(status=coise)
