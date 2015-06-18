@@ -1,0 +1,115 @@
+#!/usr/bin/python2
+import sqlite3 as db
+
+def frase():
+	a_aux = get_a()
+	a = a_aux.a
+	b_aux = get_b(a_aux)
+	b = b_aux.b
+	compSub = 0;
+	c=""
+
+	if a_aux.iden > 7:
+		compSub = 1
+		aComp = get_a_comp()
+	
+	if b_aux.iden == 0: # adjetivos
+		c = get_c_adj(a_aux)
+
+	if b_aux.iden == 2: # metaforas
+		c = get_c_met(a_aux)
+
+	if compSub == 1:
+		a = a+aComp
+
+	if b_aux.iden == 1 or b_aux.iden > 2: # termina ja
+		frase = a+b+"."
+		return frase
+
+	frase = a+b+c+"."
+	return frase
+
+class A(object):
+	def __init__(self, iden, a, num, gen):
+		self.iden = iden
+		self.a = a
+		self.num = num
+		self.gen = gen
+
+class B(object):
+	def __init__(self, iden, b):
+		self.iden = iden
+		self.b = b
+
+def get_a():
+	con = get_con()
+	a = None
+	
+	with con:
+		cur = con.cursor()
+		cur.execute('SELECT * FROM A ORDER BY RANDOM() LIMIT 1')
+		data = cur.fetchone()
+		a = A(data[0], data[1], data[2], data[3])
+	
+	con.close()
+	return a
+
+def get_b(a):
+	con = get_con()
+	b = None
+	
+	with con:
+		cur = con.cursor()
+		cur.execute('SELECT ID, B_%s FROM B ORDER BY RANDOM() LIMIT 1' % a.num)
+		data = cur.fetchone()
+		b = B(data[0], data[1])
+	
+	con.close()
+	return b
+
+def get_a_comp():
+	con = get_con()
+	a_comp = None
+	
+	with con:
+		cur = con.cursor()
+		cur.execute('SELECT * FROM A_P ORDER BY RANDOM() LIMIT 1')
+		data = cur.fetchone()
+		a_comp = data[0]
+	
+	con.close()
+	return a_comp
+ 
+def get_c_adj(a):
+	con = get_con()
+	c_adj = None
+	
+	with con:
+		cur = con.cursor()
+		cur.execute('SELECT C_A_%s FROM C_A ORDER BY RANDOM() LIMIT 1' % a.num)
+		data = cur.fetchone()
+		c_adj = data[0]
+	
+	con.close()
+	return c_adj
+	
+def get_c_met(a):
+	con = get_con()
+	c_met = None
+	
+	with con:
+		cur = con.cursor()
+		cur.execute('SELECT C_M_%s FROM C_M ORDER BY RANDOM() LIMIT 1' % a.num)
+		data = cur.fetchone()
+		c_met = data[0]
+	
+	con.close()
+	return c_met
+
+def get_con():
+	 con = db.connect('gustavo.db')
+	 con.text_factory = str
+	 return con
+ 
+coise = frase()
+print(coise)
