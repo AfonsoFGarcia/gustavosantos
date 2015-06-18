@@ -1,0 +1,11 @@
+#!/usr/bin/python2
+import tweepy as twitter
+import config
+
+auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
+redirect_url = auth.get_authorization_url()
+print("Go to %s" % redirect_url)
+verifier = raw_input("PIN: ")
+auth.get_access_token(verifier)
+print("access_token = '%s'" % auth.access_token)
+print("access_token_secret = '%s'" % auth.access_token_secret)
