@@ -1,5 +1,5 @@
 # GustavoSantos
-Um bot para o Twitter que tenta ser um life coach.
+Um bot para o Twitter que tenta ser um life coach. Os pais do Gustavo são o [@afonsoFGarcia](https://twitter.com/afonsoFGarcia) e o [@0xJoao](https://twitter.com/0xJoao).
 
 Instalar as dependências
 ------

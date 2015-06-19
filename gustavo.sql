@@ -43,6 +43,8 @@ INSERT INTO A(A, N, G) VALUES('A caverna ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('O túnel ', 'S', 'M');
 INSERT INTO A(A, N, G) VALUES('A montanha-russa ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('A nossa história ', 'S', 'F');
+INSERT INTO A(A, N, G) VALUES('O esquema ', 'S', 'M');
+INSERT INTO A(A, N, G) VALUES('A dicotomia ', 'S', 'F');
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -61,7 +63,7 @@ INSERT INTO A_P(A_P) VALUES('dos valores ');
 INSERT INTO A_P(A_P) VALUES('do respeito ');
 INSERT INTO A_P(A_P) VALUES('do carisma ');
 INSERT INTO A_P(A_P) VALUES('do futuro ');
-
+INSERT INTO A_P(A_P) VALUES('do avião ');
 
 INSERT INTO B(ID, B_S, B_P) VALUES(0, 'é ', 'são ');
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
@@ -78,8 +80,8 @@ INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa historia', 'fazem parte da no
 
 INSERT INTO C_A(C_A_S, C_A_P) VALUES('importante', 'importantes');
 INSERT INTO C_A(C_A_S, C_A_P) VALUES('determinante', 'determinantes');
-INSERT INTO C_A(C_A_S, C_A_P) VALUES('coise', 'coises');
 INSERT INTO C_A(C_A_S, C_A_P) VALUES('a vida', 'a vida');
+INSERT INTO C_A(C_A_S, C_A_P) VALUES('tóxico', 'tóxicos');
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');
