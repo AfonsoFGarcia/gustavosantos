@@ -43,7 +43,7 @@ INSERT INTO A(A, N, G) VALUES('A caverna ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('O túnel ', 'S', 'M');
 INSERT INTO A(A, N, G) VALUES('A montanha-russa ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('A nossa história ', 'S', 'F');
-INSERT INTO A(A, N, G) VALUES('O esquema ', 'S', 'M');
+INSERT INTO A(A, N, G) VALUES('O esquema do avião ', 'S', 'M');
 INSERT INTO A(A, N, G) VALUES('A dicotomia ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('Os pilares ', 'P', 'M');
 INSERT INTO A(A, N, G) VALUES('O caminho ', 'S', 'M');
@@ -65,11 +65,9 @@ INSERT INTO A_P(A_P) VALUES('dos valores ');
 INSERT INTO A_P(A_P) VALUES('do respeito ');
 INSERT INTO A_P(A_P) VALUES('do carisma ');
 INSERT INTO A_P(A_P) VALUES('do futuro ');
-INSERT INTO A_P(A_P) VALUES('do avião ');
 INSERT INTO A_P(A_P) VALUES('da infância ');
 INSERT INTO A_P(A_P) VALUES('do saber ');
 INSERT INTO A_P(A_P) VALUES('da felicidade ');
-
 
 INSERT INTO B(ID, B_S, B_P) VALUES(0, 'é ', 'são ');
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
