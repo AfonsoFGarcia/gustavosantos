@@ -45,6 +45,8 @@ INSERT INTO A(A, N, G) VALUES('A montanha-russa ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('A nossa história ', 'S', 'F');
 INSERT INTO A(A, N, G) VALUES('O esquema ', 'S', 'M');
 INSERT INTO A(A, N, G) VALUES('A dicotomia ', 'S', 'F');
+INSERT INTO A(A, N, G) VALUES('Os pilares ', 'P', 'M');
+INSERT INTO A(A, N, G) VALUES('O caminho ', 'S', 'M');
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -64,6 +66,10 @@ INSERT INTO A_P(A_P) VALUES('do respeito ');
 INSERT INTO A_P(A_P) VALUES('do carisma ');
 INSERT INTO A_P(A_P) VALUES('do futuro ');
 INSERT INTO A_P(A_P) VALUES('do avião ');
+INSERT INTO A_P(A_P) VALUES('da infância ');
+INSERT INTO A_P(A_P) VALUES('do saber ');
+INSERT INTO A_P(A_P) VALUES('da felicidade ');
+
 
 INSERT INTO B(ID, B_S, B_P) VALUES(0, 'é ', 'são ');
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
@@ -77,6 +83,8 @@ INSERT INTO B(B_S, B_P) VALUES('está sempre à espreita', 'estão sempre à esp
 INSERT INTO B(B_S, B_P) VALUES('tem muitas surpresas', 'têm muitas surpresas');
 INSERT INTO B(B_S, B_P) VALUES('tem altos e baixos', 'têm altos e baixos');
 INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa historia', 'fazem parte da nossa história');
+INSERT INTO B(B_S, B_P) VALUES('não é o que parece', 'não são o que parecem');
+INSERT INTO B(B_S, B_P) VALUES('às vezes engana-nos', 'às vezes enganam-nos');
 
 INSERT INTO C_A(C_A_S, C_A_P) VALUES('importante', 'importantes');
 INSERT INTO C_A(C_A_S, C_A_P) VALUES('determinante', 'determinantes');
