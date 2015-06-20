@@ -1,7 +1,7 @@
 CREATE TABLE A(ID INTEGER PRIMARY KEY, A TEXT, N CHAR(1), G CHAR(1));
 CREATE TABLE A_P(A_P TEXT);
 CREATE TABLE B(ID INTEGER PRIMARY KEY, B_S TEXT, B_P TEXT);
-CREATE TABLE C_A(C_A_S TEXT, C_A_P TEXT);
+CREATE TABLE C_A(C_A_S_M TEXT, C_A_S_F TEXT, C_A_P_M TEXT, C_A_P_F TEXT);
 CREATE TABLE C_M(C_M_S TEXT, C_M_P TEXT);
 
 INSERT INTO A(ID, A, N, G) VALUES(0, 'A vida ', 'S', 'F');
@@ -84,10 +84,10 @@ INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa historia', 'fazem parte da no
 INSERT INTO B(B_S, B_P) VALUES('não é o que parece', 'não são o que parecem');
 INSERT INTO B(B_S, B_P) VALUES('às vezes engana-nos', 'às vezes enganam-nos');
 
-INSERT INTO C_A(C_A_S, C_A_P) VALUES('importante', 'importantes');
-INSERT INTO C_A(C_A_S, C_A_P) VALUES('determinante', 'determinantes');
-INSERT INTO C_A(C_A_S, C_A_P) VALUES('a vida', 'a vida');
-INSERT INTO C_A(C_A_S, C_A_P) VALUES('tóxico', 'tóxicos');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('importante', 'importante', 'importantes', 'importantes');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('determinante', 'determinante', 'determinantes', 'determinantes');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('a vida', 'a vida', 'a vida', 'a vida');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('tóxico', 'tóxica', 'tóxicos', 'tóxicas');
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');

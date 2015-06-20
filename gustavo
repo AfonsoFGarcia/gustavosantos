@@ -89,7 +89,7 @@ def get_c_adj(a):
 	
 	with con:
 		cur = con.cursor()
-		cur.execute('SELECT C_A_%s FROM C_A ORDER BY RANDOM() LIMIT 1' % a.num)
+		cur.execute('SELECT C_A_%s_%s FROM C_A ORDER BY RANDOM() LIMIT 1' % (a.num, a.gen))
 		data = cur.fetchone()
 		c_adj = data[0]
 	
