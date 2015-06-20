@@ -1,4 +1,6 @@
 #!/usr/bin/python2
+# coding: utf-8
+from random import randint as rand
 import sqlite3 as db
 import tweepy as twitter
 import config
@@ -16,10 +18,10 @@ def frase():
 		compSub = 1
 		aComp = get_a_comp()
 	
-	if b_aux.iden == 0: # adjetivos
+	if b_aux.iden == -1: # adjetivos
 		c = get_c_adj(a_aux)
 
-	if b_aux.iden == 2: # metaforas
+	if b_aux.iden == -2: # metaforas
 		c = get_c_met(a_aux)
 
 	if compSub == 1:
@@ -49,8 +51,9 @@ def get_a():
 	a = None
 	
 	with con:
+		comp = rand(0,600) % 2
 		cur = con.cursor()
-		cur.execute('SELECT * FROM A ORDER BY RANDOM() LIMIT 1')
+		cur.execute("SELECT * FROM A WHERE C = '%d' ORDER BY RANDOM() LIMIT 1" % comp)
 		data = cur.fetchone()
 		a = A(data[0], data[1], data[2], data[3])
 	
@@ -58,6 +61,23 @@ def get_a():
 	return a
 
 def get_b(a):
+	func = {0 : get_b_norm, 1 : get_b_adj, 2 : get_b_met}
+	ind = rand(0,900) % 3
+	return func[ind](a)
+
+def get_b_adj(a):
+	if a.num == 'S':
+		return B(-1, 'é ')
+	else:
+		return B(-1, 'são ')
+
+def get_b_met(a):
+	if a.num == 'S':
+		return B(-2, 'é como ')
+	else:
+		return B(-2, 'são como ')
+
+def get_b_norm(a):
 	con = get_con()
 	b = None
 	
