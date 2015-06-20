@@ -11,11 +11,9 @@ def frase():
 	a = a_aux.a
 	b_aux = get_b(a_aux)
 	b = b_aux.b
-	compSub = 0;
 	c=""
 
-	if a_aux.iden > 7:
-		compSub = 1
+	if a_aux.c == 1:
 		aComp = get_a_comp()
 	
 	if b_aux.iden == -1: # adjetivos
@@ -24,10 +22,10 @@ def frase():
 	if b_aux.iden == -2: # metaforas
 		c = get_c_met(a_aux)
 
-	if compSub == 1:
+	if a_aux.c == 1:
 		a = a+aComp
 
-	if b_aux.iden == 1 or b_aux.iden > 2: # termina ja
+	if b_aux.iden == 1: # termina ja
 		frase = a+b+"."
 		return frase
 
@@ -35,11 +33,11 @@ def frase():
 	return frase
 
 class A(object):
-	def __init__(self, iden, a, num, gen):
-		self.iden = iden
+	def __init__(self, a, num, gen, c):
 		self.a = a
 		self.num = num
 		self.gen = gen
+		self.c = c
 
 class B(object):
 	def __init__(self, iden, b):
@@ -61,8 +59,8 @@ def get_a():
 	return a
 
 def get_b(a):
-	func = {0 : get_b_norm, 1 : get_b_adj, 2 : get_b_met}
-	ind = rand(0,900) % 3
+	func = {0 : get_b_norm, 1 : get_b_adj, 2 : get_b_met, 3 : get_b_norm, 4 : get_b_met, 5 : get_b_norm}
+	ind = rand(0,1800) % 6
 	return func[ind](a)
 
 def get_b_adj(a):
@@ -83,9 +81,9 @@ def get_b_norm(a):
 	
 	with con:
 		cur = con.cursor()
-		cur.execute('SELECT ID, B_%s FROM B ORDER BY RANDOM() LIMIT 1' % a.num)
+		cur.execute('SELECT B_%s FROM B ORDER BY RANDOM() LIMIT 1' % a.num)
 		data = cur.fetchone()
-		b = B(data[0], data[1])
+		b = B(1, data[0])
 	
 	con.close()
 	return b
