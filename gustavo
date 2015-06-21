@@ -45,7 +45,6 @@ class B(object):
 		self.b = b
 
 def get_a():
-	con = get_con()
 	a = None
 	
 	with con:
@@ -55,7 +54,6 @@ def get_a():
 		data = cur.fetchone()
 		a = A(data[0], data[1], data[2], data[3])
 	
-	con.close()
 	return a
 
 def get_b(a):
@@ -76,7 +74,6 @@ def get_b_met(a):
 		return B(-2, 'são como ')
 
 def get_b_norm(a):
-	con = get_con()
 	b = None
 	
 	with con:
@@ -85,11 +82,9 @@ def get_b_norm(a):
 		data = cur.fetchone()
 		b = B(1, data[0])
 	
-	con.close()
 	return b
 
 def get_a_comp():
-	con = get_con()
 	a_comp = None
 	
 	with con:
@@ -98,11 +93,9 @@ def get_a_comp():
 		data = cur.fetchone()
 		a_comp = data[0]
 	
-	con.close()
 	return a_comp
  
 def get_c_adj(a):
-	con = get_con()
 	c_adj = None
 	
 	with con:
@@ -111,11 +104,9 @@ def get_c_adj(a):
 		data = cur.fetchone()
 		c_adj = data[0]
 	
-	con.close()
 	return c_adj
 	
 def get_c_met(a):
-	con = get_con()
 	c_met = None
 	
 	with con:
@@ -124,14 +115,24 @@ def get_c_met(a):
 		data = cur.fetchone()
 		c_met = data[0]
 	
-	con.close()
 	return c_met
 
-def get_con():
-	 con = db.connect('%s/gustavo.db' % sys.path[0])
-	 con.text_factory = str
-	 return con
- 
+# MAIN
+
+path = sys.path[0]
+
+import git
+
+git.cmd.Git(path).pull()
+
+con = db.connect(':memory:')
+con.text_factory = str
+
+f = open('%s/gustavo.sql' % path)
+sql = f.read()
+con.executescript(sql)
+f.close()
+
 coise = frase()
 
 auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
@@ -139,3 +140,5 @@ auth.set_access_token(config.access_token, config.access_token_secret)
 
 api = twitter.API(auth)
 api.update_status(status=coise)
+
+con.close()
