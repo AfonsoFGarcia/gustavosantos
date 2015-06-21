@@ -20,3 +20,8 @@ Obter a sabedoria do Gustavo
 -------
 
 O Gustavo gosta de partilhar a sua sabedoria no Twitter. Para isso basta executar `./gustavo`.
+
+Agradecimentos
+------
+
+O Gustavo quer agradecer à [@MaidenHebi](https://twitter.com/MaidenHebi) pela importante contribuição na escolha do conteúdo da sua sabedoria, bem como ao [@AndreFBx](https://twitter.com/AndreFBx) pela lição de vida que lhe deu.

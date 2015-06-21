@@ -1,3 +1,5 @@
+BEGIN TRANSACTION;
+
 CREATE TABLE A(A TEXT, N CHAR(1), G CHAR(1), C INTEGER);
 CREATE TABLE A_P(A_P TEXT);
 CREATE TABLE B(B_S TEXT, B_P TEXT);
@@ -98,3 +100,5 @@ INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma bola de berlim', 'uma bola de berlim')
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma cascata congelada', 'uma cascata congelada');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um relâmpago', 'relâmpagos');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('escalar o Evereste', 'escalar o Evereste');
+
+COMMIT TRANSACTION;
