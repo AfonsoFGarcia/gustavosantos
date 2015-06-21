@@ -49,6 +49,14 @@ INSERT INTO A(A, N, G, C) VALUES('O esquema do avião ', 'S', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('A dicotomia ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('Os pilares ', 'P', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('O caminho ', 'S', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('As dicotomias ', 'P', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A conquista ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A mão ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A estrada ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A rota ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A expansão ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A ambiguidade ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('As cicatrizes ', 'P', 'F', 1);
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -70,6 +78,8 @@ INSERT INTO A_P(A_P) VALUES('do futuro ');
 INSERT INTO A_P(A_P) VALUES('da infância ');
 INSERT INTO A_P(A_P) VALUES('do saber ');
 INSERT INTO A_P(A_P) VALUES('da felicidade ');
+INSERT INTO A_P(A_P) VALUES('da esperança ');
+INSERT INTO A_P(A_P) VALUES('da saudade ');
 
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
 INSERT INTO B(B_S, B_P) VALUES('não espera por ninguém', 'não esperam por ninguém');
@@ -83,11 +93,18 @@ INSERT INTO B(B_S, B_P) VALUES('tem altos e baixos', 'têm altos e baixos');
 INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa historia', 'fazem parte da nossa história');
 INSERT INTO B(B_S, B_P) VALUES('não é o que parece', 'não são o que parecem');
 INSERT INTO B(B_S, B_P) VALUES('às vezes engana-nos', 'às vezes enganam-nos');
+INSERT INTO B(B_S, B_P) VALUES('guia-nos', 'guiam-nos');
 
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('importante', 'importante', 'importantes', 'importantes');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('determinante', 'determinante', 'determinantes', 'determinantes');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('a vida', 'a vida', 'a vida', 'a vida');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('tóxico', 'tóxica', 'tóxicos', 'tóxicas');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('desagradável, mas necessário', 'desagradável, mas necessária', 'desagradáveis, mas necessários', 'desagradáveis, mas necessárias');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('a base da condição humana', 'a base da condição humana', 'a base da condição humana', 'a base da condição humana');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma conquista', 'uma conquista', 'uma conquista', 'uma conquista');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o maior inimigo do sucesso', 'a maior inimiga do sucesso', 'os maiores inimigos do sucesso', 'as maiores inimigas do sucesso');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma migalha no pão da nossa vida', 'uma migalha no pão da nossa vida', 'migalhas no pão da nossa vida', 'migalhas no pão da nossa vida');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris');
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');
