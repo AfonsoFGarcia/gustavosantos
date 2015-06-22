@@ -57,6 +57,7 @@ INSERT INTO A(A, N, G, C) VALUES('A rota ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('A expansão ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('A ambiguidade ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('As cicatrizes ', 'P', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('O perigo ', 'S', 'M', 1);
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -105,6 +106,7 @@ INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma conquista', 'uma
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o maior inimigo do sucesso', 'a maior inimiga do sucesso', 'os maiores inimigos do sucesso', 'as maiores inimigas do sucesso');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma migalha no pão da nossa vida', 'uma migalha no pão da nossa vida', 'migalhas no pão da nossa vida', 'migalhas no pão da nossa vida');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tempero da vida', 'o tempero da vida', 'o tempero da vida', 'o tempero da vida')
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');
