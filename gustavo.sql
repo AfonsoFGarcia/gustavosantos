@@ -102,7 +102,7 @@ INSERT INTO B(B_S, B_P) VALUES('chama por nós', 'chamam por nós');
 INSERT INTO B(B_S, B_P) VALUES('está sempre à espreita', 'estão sempre à espreita');
 INSERT INTO B(B_S, B_P) VALUES('tem muitas surpresas', 'têm muitas surpresas');
 INSERT INTO B(B_S, B_P) VALUES('tem altos e baixos', 'têm altos e baixos');
-INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa historia', 'fazem parte da nossa história');
+INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa história', 'fazem parte da nossa história');
 INSERT INTO B(B_S, B_P) VALUES('não é o que parece', 'não são o que parecem');
 INSERT INTO B(B_S, B_P) VALUES('às vezes engana-nos', 'às vezes enganam-nos');
 INSERT INTO B(B_S, B_P) VALUES('guia-nos', 'guiam-nos');
@@ -133,7 +133,6 @@ INSERT INTO C_M(C_M_S, C_M_P) VALUES('escalar o Evereste', 'escalar o Evereste')
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma caixa de chocolates', 'uma caixa de chocolates');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma peça de teatro', 'peças de teatro');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um livro em branco', 'um livro em branco');
-INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma peça de teatro', 'uma peça de teatro');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jogo de cartas', 'um jogo de cartas');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma roda gigante', 'uma roda gigante');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jardim à espera de florescer', 'um jardim à espera de florescer');
