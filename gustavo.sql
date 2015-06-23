@@ -58,6 +58,14 @@ INSERT INTO A(A, N, G, C) VALUES('A expansão ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('A ambiguidade ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('As cicatrizes ', 'P', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('O perigo ', 'S', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('A árvore ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A máquina ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A dança ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A chave ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('O furacão ', 'S', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('O sentido ', 'S', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('A procura ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A razão ', 'S', 'F', 1);
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -81,6 +89,9 @@ INSERT INTO A_P(A_P) VALUES('do saber ');
 INSERT INTO A_P(A_P) VALUES('da felicidade ');
 INSERT INTO A_P(A_P) VALUES('da esperança ');
 INSERT INTO A_P(A_P) VALUES('da saudade ');
+INSERT INTO A_P(A_P) VALUES('dos problemas ');
+INSERT INTO A_P(A_P) VALUES('do conhecimento ');
+INSERT INTO A_P(A_P) VALUES('da riqueza ');
 
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
 INSERT INTO B(B_S, B_P) VALUES('não espera por ninguém', 'não esperam por ninguém');
@@ -119,5 +130,21 @@ INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma bola de berlim', 'uma bola de berlim')
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma cascata congelada', 'uma cascata congelada');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um relâmpago', 'relâmpagos');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('escalar o Evereste', 'escalar o Evereste');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma caixa de chocolates', 'uma caixa de chocolates');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma peça de teatro', 'peças de teatro');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('um livro em branco', 'um livro em branco');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma peça de teatro', 'uma peça de teatro');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jogo de cartas', 'um jogo de cartas');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma roda gigante', 'uma roda gigante');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jardim à espera de florescer', 'um jardim à espera de florescer');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('andar de bicicleta', 'andar de bicicleta');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma montanha-russa', 'uma montanha-russa');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('pizza', 'pizza');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('um barco a vapor', 'um barco a vapor');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma manhã de nevoeiro', 'uma manhã de nevoeiro');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma tarde soalheira', 'uma tarde soalheira');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma noite escura', 'uma noite escura');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jogo de xadrez', 'jogos de xadrez');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma estrada interminável', 'uma estrada interminável');
 
 COMMIT TRANSACTION;
