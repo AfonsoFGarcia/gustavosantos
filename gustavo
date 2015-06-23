@@ -133,12 +133,20 @@ sql = f.read()
 con.executescript(sql)
 f.close()
 
-coise = frase()
+tweeted = False
 
-auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
-auth.set_access_token(config.access_token, config.access_token_secret)
-
-api = twitter.API(auth)
-api.update_status(status=coise)
+while not tweeted:
+	try:
+		coise = frase()
+		
+		auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
+		auth.set_access_token(config.access_token, config.access_token_secret)
+		
+		api = twitter.API(auth)
+		api.update_status(status=coise)
+		
+		tweeted = True
+	except tweepy.error.TweepError:
+		pass
 
 con.close()
