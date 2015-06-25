@@ -5,6 +5,7 @@ import sqlite3 as db
 import tweepy as twitter
 import config
 import sys
+import os
 
 def frase():
 	a_aux = get_a()
@@ -120,10 +121,8 @@ def get_c_met(a):
 # MAIN
 
 path = sys.path[0]
-
-import git
-
-git.cmd.Git(path).pull()
+os.system("git checkout -- .")
+os.system("git pull")
 
 con = db.connect(':memory:')
 con.text_factory = str
