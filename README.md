@@ -24,4 +24,4 @@ O Gustavo gosta de partilhar a sua sabedoria no Twitter. Para isso basta executa
 Agradecimentos
 ------
 
-O Gustavo quer agradecer à [@MaidenHebi](https://twitter.com/MaidenHebi) pela importante contribuição na escolha do conteúdo da sua sabedoria, bem como ao [@AndreFBx](https://twitter.com/AndreFBx) pela lição de vida que lhe deu.
+O Gustavo quer agradecer à [@MaidenHebi](https://twitter.com/MaidenHebi) pela importante contribuição na escolha do conteúdo da sua sabedoria, bem como ao [@AndreFBx](https://twitter.com/AndreFBx), ao [@nunotcsousa](https://twitter.com/nunotcsousa) e ao [@Superman_Torras](https://twitter.com/Superman_Torras) pela lição de vida que lhe deu.

@@ -118,6 +118,7 @@ INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o maior inimigo do s
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma migalha no pão da nossa vida', 'uma migalha no pão da nossa vida', 'migalhas no pão da nossa vida', 'migalhas no pão da nossa vida');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tempero da vida', 'o tempero da vida', 'o tempero da vida', 'o tempero da vida');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma mortalha que vais fumando lentamente até só ficar o filtro', 'uma mortalha que vais fumando lentamente até só ficar o filtro', 'uma mortalha que vais fumando lentamente até só ficar o filtro', 'uma mortalha que vais fumando lentamente até só ficar o filtro');
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');
@@ -145,5 +146,6 @@ INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma tarde soalheira', 'uma tarde soalheira
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma noite escura', 'uma noite escura');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jogo de xadrez', 'jogos de xadrez');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma estrada interminável', 'uma estrada interminável');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('as flores do jardim', 'as flores do jardim');
 
 COMMIT TRANSACTION;
