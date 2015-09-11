@@ -7,6 +7,7 @@ import tweepy as twitter
 import config
 import sys
 import os
+import subprocess
 
 def frase():
 	a_aux = get_a()
@@ -47,14 +48,13 @@ class B(object):
 		self.b = b
 
 def get_a():
-	a = None
 	t = time.now()
+	a = None
 	
-	if t.month == 9 and t.day == 11:
-		if t.hour == 14:
-			a = A('O destino do avião ', 'S', 'M', 1)
-		elif t.hour == 15:
-			a = A('A torre ', 'S', 'F', 1)
+	if t.month == 9 and t.day == 11 and t.hour == 14:
+		a = A('O destino do avião ', 'S', 'M', 1)
+	elif t.month == 9 and t.day == 11 and t.hour == 15:
+		a = A('A torre ', 'S', 'F', 1)
 	else:
 		with con:
 			comp = rand(0,600) % 2
@@ -129,8 +129,19 @@ def get_c_met(a):
 # MAIN
 
 path = sys.path[0]
-os.system("git checkout -- .")
-os.system("git pull")
+
+pr = subprocess.Popen("/usr/bin/git checkout -- .", cwd = os.path.dirname("%s/" % path), shell = True, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+(out, error) = pr.communicate()
+
+print "Out: " + out
+print "Error: " + error
+
+pr = subprocess.Popen("/usr/bin/git pull", cwd = os.path.dirname("%s/" % 
+path), shell = True, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+(out, error) = pr.communicate()
+
+print "Out: " + out
+print "Error: " + error
 
 con = db.connect(':memory:')
 con.text_factory = str
@@ -153,7 +164,7 @@ while not tweeted:
 		api.update_status(status=coise)
 		
 		tweeted = True
-	except tweepy.error.TweepError:
+	except twitter.error.TweepError:
 		pass
 
 con.close()
