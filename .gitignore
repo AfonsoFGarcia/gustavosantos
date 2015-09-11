@@ -61,3 +61,5 @@ gustavo.db
 
 # Config gile
 config.py
+
+.fuse*

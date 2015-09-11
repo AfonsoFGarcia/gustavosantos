@@ -1,6 +1,7 @@
 #!/usr/bin/python2
 # coding: utf-8
 from random import randint as rand
+from datetime import datetime as time
 import sqlite3 as db
 import tweepy as twitter
 import config
@@ -47,13 +48,20 @@ class B(object):
 
 def get_a():
 	a = None
+	t = time.now()
 	
-	with con:
-		comp = rand(0,600) % 2
-		cur = con.cursor()
-		cur.execute("SELECT * FROM A WHERE C = '%d' ORDER BY RANDOM() LIMIT 1" % comp)
-		data = cur.fetchone()
-		a = A(data[0], data[1], data[2], data[3])
+	if t.month == 9 and t.day == 11:
+		if t.hour == 14:
+			a = A('O destino do avião ', 'S', 'M', 1)
+		elif t.hour == 15:
+			a = A('A torre ', 'S', 'F', 1)
+	else:
+		with con:
+			comp = rand(0,600) % 2
+			cur = con.cursor()
+			cur.execute("SELECT * FROM A WHERE C = '%d' ORDER BY RANDOM() LIMIT 1" % comp)
+			data = cur.fetchone()
+			a = A(data[0], data[1], data[2], data[3])
 	
 	return a
 
