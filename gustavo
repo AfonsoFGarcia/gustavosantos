@@ -47,15 +47,23 @@ class B(object):
 		self.iden = iden
 		self.b = b
 
+def special_days():
+	a = None
+	t = time.now()
+	
+	if t.month == 9 and t.day == 11:
+		if t.hour == 14:
+			a = A('O destino do avião ', 'S', 'M', 1)
+		elif t.hour == 15:
+			a = A('A torre ', 'S', 'F', 1)
+	
+	return a
+
 def get_a():
 	t = time.now()
-	a = None
+	a = special_days()
 	
-	if t.month == 9 and t.day == 11 and t.hour == 14:
-		a = A('O destino do avião ', 'S', 'M', 1)
-	elif t.month == 9 and t.day == 11 and t.hour == 15:
-		a = A('A torre ', 'S', 'F', 1)
-	else:
+	if a is None:
 		with con:
 			comp = rand(0,600) % 2
 			cur = con.cursor()
@@ -136,8 +144,7 @@ pr = subprocess.Popen("/usr/bin/git checkout -- .", cwd = os.path.dirname("%s/" 
 print "Out: " + out
 print "Error: " + error
 
-pr = subprocess.Popen("/usr/bin/git pull", cwd = os.path.dirname("%s/" % 
-path), shell = True, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+pr = subprocess.Popen("/usr/bin/git pull", cwd = os.path.dirname("%s/" % path), shell = True, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
 (out, error) = pr.communicate()
 
 print "Out: " + out
