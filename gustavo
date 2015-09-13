@@ -12,27 +12,23 @@ import subprocess
 def frase():
 	a_aux = get_a()
 	a = a_aux.a
-	b_aux = get_b(a_aux)
-	b = b_aux.b
+	b = get_b(a_aux)
 	c=""
 
 	if a_aux.c == 1:
-		aComp = get_a_comp()
+		a = a + get_a_comp()
 	
-	if b_aux.iden == -1: # adjetivos
+	if b.iden == -1: # adjetivos
 		c = get_c_adj(a_aux)
 
-	if b_aux.iden == -2: # metaforas
+	if b.iden == -2: # metaforas
 		c = get_c_met(a_aux)
 
-	if a_aux.c == 1:
-		a = a+aComp
-
-	if b_aux.iden == 1: # termina ja
-		frase = a+b+"."
+	if b.iden == 1: # termina ja
+		frase = a+b.b+"."
 		return frase
 
-	frase = a+b+c+"."
+	frase = a+b.b+c+"."
 	return frase
 
 class A(object):

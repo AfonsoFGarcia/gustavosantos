@@ -66,6 +66,8 @@ INSERT INTO A(A, N, G, C) VALUES('O furacão ', 'S', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('O sentido ', 'S', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('A procura ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('A razão ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('A mentira ', 'S', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('O segredo ', 'S', 'M', 1);
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -92,6 +94,8 @@ INSERT INTO A_P(A_P) VALUES('da saudade ');
 INSERT INTO A_P(A_P) VALUES('dos problemas ');
 INSERT INTO A_P(A_P) VALUES('do conhecimento ');
 INSERT INTO A_P(A_P) VALUES('da riqueza ');
+INSERT INTO A_P(A_P) VALUES('da política ');
+INSERT INTO A_P(A_P) VALUES('da novela da noite ');
 
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
 INSERT INTO B(B_S, B_P) VALUES('não espera por ninguém', 'não esperam por ninguém');
@@ -106,6 +110,7 @@ INSERT INTO B(B_S, B_P) VALUES('faz parte da nossa história', 'fazem parte da n
 INSERT INTO B(B_S, B_P) VALUES('não é o que parece', 'não são o que parecem');
 INSERT INTO B(B_S, B_P) VALUES('às vezes engana-nos', 'às vezes enganam-nos');
 INSERT INTO B(B_S, B_P) VALUES('guia-nos', 'guiam-nos');
+INSERT INTO B(B_S, B_P) VALUES('voa mais alto que as nuvens', 'voam mais alto que as nuvens');
 
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('importante', 'importante', 'importantes', 'importantes');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('determinante', 'determinante', 'determinantes', 'determinantes');
@@ -119,6 +124,9 @@ INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma migalha no pão 
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris', 'o tesouro no fim do arco-íris');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('o tempero da vida', 'o tempero da vida', 'o tempero da vida', 'o tempero da vida');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma mortalha que vais fumando lentamente até só ficar o filtro', 'uma mortalha que vais fumando lentamente até só ficar o filtro', 'uma mortalha que vais fumando lentamente até só ficar o filtro', 'uma mortalha que vais fumando lentamente até só ficar o filtro');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('um refugiado que foge da guerra', 'uma refugiada que foge da guerra', 'uns refugiados que fogem da guerra', 'umas refugiadas que fogem da guerra');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('a promessa de um político', 'a promessa de um político', 'as promessas de um político', 'as promessas de um político');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('um sudoku por terminar', 'um sudoku por terminar', 'um sudoku por terminar', 'um sudoku por terminar');
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');
@@ -147,5 +155,6 @@ INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma noite escura', 'uma noite escura');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um jogo de xadrez', 'jogos de xadrez');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma estrada interminável', 'uma estrada interminável');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('as flores do jardim', 'as flores do jardim');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma fartura', 'farturas');
 
 COMMIT TRANSACTION;
