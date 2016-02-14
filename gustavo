@@ -54,6 +54,8 @@ def special_days():
 			a = A('A torre ', 'S', 'F', 1)
 	elif t.month == 2 and t.day == 14:
 		a = A('O amor ', 'S', 'M', 0)
+	elif t.month == 6 and t.day == 19 and t.hour == 0:
+		a = A('O meu aniversário ', 'S', 'M', 0)
 	
 	return a
 

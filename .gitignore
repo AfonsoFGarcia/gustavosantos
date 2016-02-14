@@ -63,3 +63,6 @@ gustavo.db
 config.py
 
 .fuse*
+
+# Gedit stupidity
+*~
