@@ -12,7 +12,7 @@ def frase():
 	compSub = 0;
 	c=""
 
-	if a_aux.iden > 7:
+	if a_aux.iden > 13:
 		compSub = 1
 		aComp = get_a_comp()
 	
