@@ -71,7 +71,7 @@ INSERT INTO A(A, N, G, C) VALUES('O segredo ', 'S', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('Os segredos ', 'P', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('Os problemas ', 'P', 'M', 0);
 INSERT INTO A(A, N, G, C) VALUES('Os problemas ', 'P', 'M', 1);
-INSERT INTO A(A, N, G, C) VALUES('O problema ', 'P', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('O problema ', 'S', 'M', 1);
 INSERT INTO A(A, N, G, C) VALUES('A nossa aura ', 'S', 'F', 0);
 INSERT INTO A(A, N, G, C) VALUES('A nossa aura ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('A morte ', 'S', 'F', 0);
