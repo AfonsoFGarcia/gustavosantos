@@ -58,6 +58,8 @@ def special_days():
 		a = A('O meu aniversário ', 'S', 'M', 0)
 	elif t.month == 4 and t.day == 25:
 		a = A('A liberdade ', 'S', 'F', 0)
+	elif t.month 00 5 and t.day == 1 and t.hour == 15:
+		a = A('Os trabalhadores ', 'P', 'M', 0)
 	
 	return a
 

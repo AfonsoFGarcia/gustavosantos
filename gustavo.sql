@@ -101,6 +101,7 @@ INSERT INTO A(A, N, G, C) VALUES('A consciência ', 'S', 'F', 0);
 INSERT INTO A(A, N, G, C) VALUES('A metamorfose ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('O conhecimento ', 'S', 'M', 0);
 INSERT INTO A(A, N, G, C) VALUES('A sabedoria ', 'S', 'F', 0);
+INSERT INTO A(A, N, G, C) VALUES('O doente ', 'S', 'M', 0);
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
