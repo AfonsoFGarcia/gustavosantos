@@ -1,13 +1,9 @@
-#!/usr/bin/python2
-# coding: utf-8
 from random import randint as rand
 from datetime import datetime as time
 import sqlite3 as db
 import tweepy as twitter
-import config
 import sys
 import os
-import subprocess
 
 def frase():
 	a_aux = get_a()
@@ -142,18 +138,6 @@ def get_c_met(a):
 
 path = sys.path[0]
 
-pr = subprocess.Popen("/usr/bin/git fetch", cwd = os.path.dirname("%s/" % path), shell = True, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-(out, error) = pr.communicate()
-
-print "Out: " + out
-print "Error: " + error
-
-pr = subprocess.Popen("/usr/bin/git checkout origin/master -- gustavo.sql", cwd = os.path.dirname("%s/" % path), shell = True, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-(out, error) = pr.communicate()
-
-print "Out: " + out
-print "Error: " + error
-
 con = db.connect(':memory:')
 con.text_factory = str
 
@@ -164,12 +148,17 @@ f.close()
 
 tweeted = False
 
+CONSUMER_KEY = os.getenv('CONSUMER_KEY')
+CONSUMER_SECRET = os.getenv('CONSUMER_SECRET')
+ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
+ACCESS_TOKEN_SECRET = os.getenv('ACCESS_TOKEN_SECRET')
+
 while not tweeted:
 	try:
 		coise = frase()
 		
-		auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
-		auth.set_access_token(config.access_token, config.access_token_secret)
+		auth = twitter.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+		auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 		
 		api = twitter.API(auth)
 		api.update_status(status=coise)

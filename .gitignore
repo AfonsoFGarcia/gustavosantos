@@ -56,11 +56,8 @@ docs/_build/
 # PyBuilder
 target/
 
-# Database
-gustavo.db
-
 # Config gile
-config.py
+gustavo.env
 
 .fuse*
 
