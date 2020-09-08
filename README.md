@@ -1,6 +1,8 @@
 # GustavoSantos
 Um bot para o Twitter que tenta ser um life coach. Os pais do Gustavo são o [@afonsoFGarcia](https://twitter.com/afonsoFGarcia) e o [@0xJoao](https://twitter.com/0xJoao).
 
+![Publish Docker image](https://github.com/AfonsoFGarcia/gustavosantos/workflows/Publish%20Docker%20image/badge.svg)
+
 Instalar as dependências
 ------
 
