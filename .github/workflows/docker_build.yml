@@ -15,5 +15,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: AfonsoFGarcia/GustavoSantos/gustavo-santos
+          repository: afonsofgarcia/gustavosantos/gustavo-santos
           tag_with_ref: true
