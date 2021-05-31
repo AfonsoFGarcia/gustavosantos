@@ -57,7 +57,7 @@ docs/_build/
 target/
 
 # Config gile
-gustavo.env
+.env
 
 .fuse*
 

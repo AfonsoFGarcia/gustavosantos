@@ -3,5 +3,5 @@ services:
   gustavo:
     image: docker.pkg.github.com/afonsofgarcia/gustavosantos/gustavo-santos:2
     env_file:
-      - gustavo.env
+      - .env
     

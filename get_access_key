@@ -1,11 +1,13 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 import tweepy as twitter
-import config
+import os
+from dotenv import load_dotenv
 
-auth = twitter.OAuthHandler(config.consumer_key, config.consumer_secret)
+load_dotenv()
+auth = twitter.OAuthHandler(os.getenv('CONSUMER_KEY'), os.getenv('CONSUMER_SECRET'))
 redirect_url = auth.get_authorization_url()
 print("Go to %s" % redirect_url)
-verifier = raw_input("PIN: ")
+verifier = input("PIN: ")
 auth.get_access_token(verifier)
 print("access_token = '%s'" % auth.access_token)
 print("access_token_secret = '%s'" % auth.access_token_secret)
