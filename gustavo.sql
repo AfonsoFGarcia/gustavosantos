@@ -102,6 +102,15 @@ INSERT INTO A(A, N, G, C) VALUES('A metamorfose ', 'S', 'F', 1);
 INSERT INTO A(A, N, G, C) VALUES('O conhecimento ', 'S', 'M', 0);
 INSERT INTO A(A, N, G, C) VALUES('A sabedoria ', 'S', 'F', 0);
 INSERT INTO A(A, N, G, C) VALUES('O doente ', 'S', 'M', 0);
+INSERT INTO A(A, N, G, C) VALUES('O coronavirus ', 'S', 'M', 0);
+INSERT INTO A(A, N, G, C) VALUES('O coronavirus ', 'S', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('As máscaras ', 'P', 'F', 0);
+INSERT INTO A(A, N, G, C) VALUES('As máscaras ', 'P', 'F', 1);
+INSERT INTO A(A, N, G, C) VALUES('O vice-almirante ', 'S', 'M', 0);
+INSERT INTO A(A, N, G, C) VALUES('O certificado digital ', 'S', 'M', 0);
+INSERT INTO A(A, N, G, C) VALUES('O certificado digital ', 'S', 'M', 1);
+INSERT INTO A(A, N, G, C) VALUES('A minha verdade ', 'S', 'F', 0);
+INSERT INTO A(A, N, G, C) VALUES('As notícias falsas ', 'P', 'F', 0);
 
 INSERT INTO A_P(A_P) VALUES('do sucesso ');
 INSERT INTO A_P(A_P) VALUES('da vida ');
@@ -132,6 +141,7 @@ INSERT INTO A_P(A_P) VALUES('da política ');
 INSERT INTO A_P(A_P) VALUES('da novela da noite ');
 INSERT INTO A_P(A_P) VALUES('do auto-conhecimento ');
 INSERT INTO A_P(A_P) VALUES('da perceção ');
+INSERT INTO A_P(A_P) VALUES('da mentira ');
 
 INSERT INTO B(B_S, B_P) VALUES('faz sentido', 'fazem sentido');
 INSERT INTO B(B_S, B_P) VALUES('não espera por ninguém', 'não esperam por ninguém');
@@ -150,6 +160,7 @@ INSERT INTO B(B_S, B_P) VALUES('voa mais alto que as nuvens', 'voam mais alto qu
 INSERT INTO B(B_S, B_P) VALUES('supera o esperado', 'superam o esperado');
 INSERT INTO B(B_S, B_P) VALUES('abre as portas da consciência ancestral', 'abrem as portas da consciência ancestral');
 INSERT INTO B(B_S, B_P) VALUES('é a voz do silêncio', 'são a voz do silêncio');
+INSERT INTO B(B_S, B_P) VALUES('engana apenas as ovelhas', 'enganam apenas as ovelhas');
 
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('importante', 'importante', 'importantes', 'importantes');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('determinante', 'determinante', 'determinantes', 'determinantes');
@@ -166,6 +177,8 @@ INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('uma mortalha que vai
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('um refugiado que foge da guerra', 'uma refugiada que foge da guerra', 'uns refugiados que fogem da guerra', 'umas refugiadas que fogem da guerra');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('a promessa de um político', 'a promessa de um político', 'as promessas de um político', 'as promessas de um político');
 INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('um sudoku por terminar', 'um sudoku por terminar', 'um sudoku por terminar', 'um sudoku por terminar');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('a maior mentira de sempre', 'a maior mentira de sempre', 'a maior mentira de sempre', 'a maior mentira de sempre');
+INSERT INTO C_A(C_A_S_M, C_A_S_F, C_A_P_M, C_A_P_F) VALUES('contrário à minha verdade', 'contrária à minha verdade', 'contrários à minha verdade', 'contrárias à minha verdade');
 
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um pastel de nata', 'pastéis de nata');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('farófias', 'farófias');
@@ -200,5 +213,6 @@ INSERT INTO C_M(C_M_S, C_M_P) VALUES('um barco sem rumo', 'barcos sem rumo');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma noz que parte os dentes', 'nozes que partem os dentes');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma nuvem sem chuva', 'nuvens sem chuva');
 INSERT INTO C_M(C_M_S, C_M_P) VALUES('um abraço apertado', 'abraços apertados');
+INSERT INTO C_M(C_M_S, C_M_P) VALUES('uma experiência desumana', 'experiências desumanas');
 
 COMMIT TRANSACTION;
