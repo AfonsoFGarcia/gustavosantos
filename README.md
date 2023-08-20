@@ -1,5 +1,5 @@
 # GustavoSantos
-Um bot para o Twitter que tenta ser um life coach. Os pais do Gustavo são o [@afonsoFGarcia](https://twitter.com/afonsoFGarcia) e o [@0xJoao](https://twitter.com/0xJoao).
+Um bot para o Twitter que tenta ser um life coach. Os pais do Gustavo são o [@afonsogarcia.dev](https://bsky.app/profile/afonsogarcia.dev) e o [@0xJoao.bsky.social](https://bsky.app/profile/0xjoao.bsky.social).
 
 ![Publish Docker image](https://github.com/AfonsoFGarcia/gustavosantos/workflows/Publish%20Docker%20image/badge.svg)
 
@@ -8,15 +8,15 @@ Instalar as dependências
 
 O Gustavo pensa melhor fechado num contentor. Para funcionar, o Gustavo precisa do [Docker](https://www.docker.com/).
 
-Obter os tokens para o utilizador
+Fazer login no BlueSky
 ------
 
-O Gustavo precisa de ser configurado. Para isso é preciso obter os tokens da aplicação (no site do Twitter) e do utilizador. Para obter os tokens do utilizador basta executar `./get_access_key`. Os tokens são guardados no ficheiro `gustavo.env`, que deve ser uma cópia do `gustavo.env.sample` com os dados correctos.
+O Gustavo precisa de ser configurado. Para isso é preciso guardar na memória do Gustavo a password da conta do BlueSky dele. O username e password são guardados no ficheiro `.env`, que deve ser uma cópia do `.env.sample` com os dados correctos.
 
 Obter a sabedoria do Gustavo
 -------
 
-O Gustavo gosta de partilhar a sua sabedoria no Twitter. Para isso basta executar `docker-compose up`.
+O Gustavo gosta de partilhar a sua sabedoria no BlueSky. Para isso basta executar `docker-compose up`.
 
 Agradecimentos
 ------
