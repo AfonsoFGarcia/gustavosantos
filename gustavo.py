@@ -1,9 +1,11 @@
 from random import randint as rand
 from datetime import datetime as time
 import sqlite3 as db
-import tweepy as twitter
+from atproto import Client
+from atproto.exceptions import AtProtocolError
 import sys
 import os
+import logging
 
 def frase():
 	a_aux = get_a()
@@ -148,23 +150,21 @@ f.close()
 
 tweeted = False
 
-CONSUMER_KEY = os.getenv('CONSUMER_KEY')
-CONSUMER_SECRET = os.getenv('CONSUMER_SECRET')
-ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
-ACCESS_TOKEN_SECRET = os.getenv('ACCESS_TOKEN_SECRET')
+USERNAME = os.getenv('BLUESKY_USERNAME')
+PASSWORD = os.getenv('BLUESKY_PASSWORD')
 
 while not tweeted:
 	try:
-		coise = frase()
+		wisdom = frase()
 		
-		auth = twitter.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-		auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-		
-		api = twitter.API(auth)
-		api.update_status(status=coise)
+		client = Client()
+		client.login(USERNAME, PASSWORD)
+
+		client.send_post(text=wisdom)
 		
 		tweeted = True
-	except twitter.error.TweepError:
+	except AtProtocolError as e:
+		logging.error("Error posting to BlueSky", exc_info=e)
 		pass
 
 con.close()
